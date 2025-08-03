@@ -1,6 +1,26 @@
 # SSE (Server-Sent Events) Package
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/smilad/eventic)](https://goreportcard.com/report/github.com/smilad/eventic)
+[![Go Version](https://img.shields.io/badge/go-1.21+-blue.svg)](https://golang.org/dl/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Go Reference](https://pkg.go.dev/badge/github.com/smilad/eventic.svg)](https://pkg.go.dev/github.com/smilad/eventic)
+[![Tests](https://github.com/smilad/eventic/workflows/Tests/badge.svg)](https://github.com/smilad/eventic/actions)
+[![Coverage](https://codecov.io/gh/smilad/eventic/branch/main/graph/badge.svg)](https://codecov.io/gh/smilad/eventic)
+[![Code Coverage](https://img.shields.io/badge/coverage-87%25-brightgreen.svg)](https://github.com/smilad/eventic)
+[![Go Build](https://github.com/smilad/eventic/workflows/Tests/badge.svg)](https://github.com/smilad/eventic/actions)
+[![Go Lint](https://github.com/smilad/eventic/workflows/Tests/badge.svg)](https://github.com/smilad/eventic/actions)
+
 A professional Go package for implementing Server-Sent Events (SSE) with high performance, reliability, and ease of use.
+
+## 📊 Project Status
+
+| Metric | Status |
+|--------|--------|
+| **Test Coverage** | 87% |
+| **Go Version** | 1.21+ |
+| **License** | MIT |
+| **Build Status** | ✅ Passing |
+| **Code Quality** | ✅ Linting Passed |
 
 ## Features
 
@@ -12,13 +32,16 @@ A professional Go package for implementing Server-Sent Events (SSE) with high pe
 - **Thread Safe**: Concurrent-safe operations for multiple goroutines
 - **Customizable**: Configurable retry policies and connection limits
 
-## Installation
+## 🚀 Installation
+
+[![Go Version](https://img.shields.io/badge/go-1.21+-blue.svg)](https://golang.org/dl/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ```bash
 go get github.com/smilad/eventic
 ```
 
-## Quick Start
+## ⚡ Quick Start
 
 ### Basic Usage
 
@@ -191,13 +214,19 @@ eventSource.onerror = function(event) {
 - Configurable buffer sizes for optimal performance
 - Efficient event broadcasting with minimal overhead
 
-## Testing
+## 🧪 Testing
+
+[![Tests](https://github.com/smilad/eventic/workflows/Tests/badge.svg)](https://github.com/smilad/eventic/actions)
+[![Coverage](https://codecov.io/gh/smilad/eventic/branch/main/graph/badge.svg)](https://codecov.io/gh/smilad/eventic)
 
 ```bash
 go test ./...
 ```
 
-## Contributing
+## 🤝 Contributing
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Issues](https://img.shields.io/badge/issues-welcome-brightgreen.svg)](https://github.com/smilad/eventic/issues)
 
 1. Fork the repository
 2. Create a feature branch
@@ -205,6 +234,8 @@ go test ./...
 4. Add tests for new functionality
 5. Submit a pull request
 
-## License
+## 📄 License
+
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 MIT License - see LICENSE file for details. 

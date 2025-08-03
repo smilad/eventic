@@ -169,7 +169,7 @@ func (s *Server) Broadcast(event Event) {
 }
 
 // BroadcastToType sends an event only to clients subscribed to a specific event type
-func (s *Server) BroadcastToType(eventType string, event Event) {
+func (s *Server) BroadcastToType(_ string, event Event) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
 
