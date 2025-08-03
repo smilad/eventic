@@ -16,6 +16,13 @@ import (
 	sse "github.com/smilad/eventic"
 )
 
+// contextKey is a custom type for context keys to avoid collisions
+type contextKey string
+
+const (
+	userIDKey contextKey = "userID"
+)
+
 // User represents a connected user
 type User struct {
 	ID       string    `json:"id"`
@@ -83,14 +90,14 @@ func (s *Server) AuthMiddleware(next http.HandlerFunc) http.HandlerFunc {
 		}
 
 		// Add user ID to request context
-		ctx := context.WithValue(r.Context(), "userID", userID)
+		ctx := context.WithValue(r.Context(), userIDKey, userID)
 		next.ServeHTTP(w, r.WithContext(ctx))
 	}
 }
 
 // HandleSSE handles SSE connections with authentication
 func (s *Server) HandleSSE(w http.ResponseWriter, r *http.Request) {
-	userID := r.Context().Value("userID").(string)
+	userID := r.Context().Value(userIDKey).(string)
 
 	// Get user info
 	s.mu.RLock()
@@ -186,7 +193,7 @@ func (s *Server) HandleMessage(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	userID := r.Context().Value("userID").(string)
+	userID := r.Context().Value(userIDKey).(string)
 
 	var msg struct {
 		Message string `json:"message"`
