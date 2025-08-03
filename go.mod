@@ -1,4 +1,4 @@
-module github.com/miladsoleymani/sse
+module github.com/smilad/eventic
 
 go 1.21
 

@@ -204,7 +204,7 @@ import (
     "net/http"
     "time"
     
-    "github.com/miladsoleymani/sse"
+    "github.com/smilad/eventic"
 )
 
 func main() {
@@ -239,7 +239,7 @@ import (
     "net/http"
     "time"
     
-    "github.com/miladsoleymani/sse"
+    "github.com/smilad/eventic"
 )
 
 func main() {

@@ -15,7 +15,7 @@ A professional Go package for implementing Server-Sent Events (SSE) with high pe
 ## Installation
 
 ```bash
-go get github.com/miladsoleymani/sse
+go get github.com/smilad/eventic
 ```
 
 ## Quick Start
@@ -30,7 +30,7 @@ import (
     "net/http"
     "time"
     
-    "github.com/miladsoleymani/sse"
+    "github.com/smilad/eventic"
 )
 
 func main() {
@@ -67,7 +67,7 @@ import (
     "net/http"
     "time"
     
-    "github.com/miladsoleymani/sse"
+    "github.com/smilad/eventic"
 )
 
 func main() {

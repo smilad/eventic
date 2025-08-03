@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/miladsoleymani/sse"
+	sse "github.com/smilad/eventic"
 )
 
 // User represents a connected user

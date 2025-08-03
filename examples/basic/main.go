@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/miladsoleymani/sse"
+	"github.com/smilad/eventic"
 )
 
 type Message struct {
