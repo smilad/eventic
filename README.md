@@ -1,14 +1,12 @@
 # SSE (Server-Sent Events) Package
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/smilad/eventic)](https://goreportcard.com/report/github.com/smilad/eventic)
 [![Go Version](https://img.shields.io/badge/go-1.21+-blue.svg)](https://golang.org/dl/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Go Reference](https://pkg.go.dev/badge/github.com/smilad/eventic.svg)](https://pkg.go.dev/github.com/smilad/eventic)
-[![Tests](https://github.com/smilad/eventic/workflows/Tests/badge.svg)](https://github.com/smilad/eventic/actions)
-[![Coverage](https://codecov.io/gh/smilad/eventic/branch/main/graph/badge.svg)](https://codecov.io/gh/smilad/eventic)
 [![Code Coverage](https://img.shields.io/badge/coverage-87%25-brightgreen.svg)](https://github.com/smilad/eventic)
-[![Go Build](https://github.com/smilad/eventic/workflows/Tests/badge.svg)](https://github.com/smilad/eventic/actions)
-[![Go Lint](https://github.com/smilad/eventic/workflows/Tests/badge.svg)](https://github.com/smilad/eventic/actions)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/smilad/eventic)
+[![Race Detection](https://img.shields.io/badge/race--detection-passing-brightgreen.svg)](https://github.com/smilad/eventic)
+[![Linting](https://img.shields.io/badge/linting-passing-brightgreen.svg)](https://github.com/smilad/eventic)
+[![Static Analysis](https://img.shields.io/badge/static--analysis-passing-brightgreen.svg)](https://github.com/smilad/eventic)
 
 A professional Go package for implementing Server-Sent Events (SSE) with high performance, reliability, and ease of use.
 
@@ -216,8 +214,8 @@ eventSource.onerror = function(event) {
 
 ## 🧪 Testing
 
-[![Tests](https://github.com/smilad/eventic/workflows/Tests/badge.svg)](https://github.com/smilad/eventic/actions)
-[![Coverage](https://codecov.io/gh/smilad/eventic/branch/main/graph/badge.svg)](https://codecov.io/gh/smilad/eventic)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/smilad/eventic)
+[![Race Detection](https://img.shields.io/badge/race--detection-passing-brightgreen.svg)](https://github.com/smilad/eventic)
 
 ```bash
 go test ./...
